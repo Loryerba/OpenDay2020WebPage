@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title> Risultato </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' type='text/css' media='screen' href='css/styleRisultatoFinale.css'>
+
+        <!-- nav bar -->
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='JS/mainFinale.js'></script>
+        <script src='JS/creaTesto.js'></script>
+        <script src='JS/FileSaver.js'></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    </head>
+
+    <!-- STILI PER LA NAV BAR -->
+
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Raleway", sans-serif
+        }
+
+        body,
+        html {
+
+            height: 85%;
+            line-height: 1.8;
+            background-image:url('img2/sfondoRisultato.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+
+        /* Full height image header */
+        .bgimg-1 {
+            background-position: center;
+            background-size: cover;
+            background-image: url("/w3images/mac.jpg");
+            margin-top: 10%;
+        }
+
+        .w3-bar .w3-button {
+            display: block;
+            padding: 0px;
+
+            border-bottom: 2px solid transparent;
+
+            transition: border-bottom-color 0.5s ease-out;
+            -webkit-transition: border-bottom-color 0.5s ease-out;
+        }
+
+
+        .w3-bar .w3-button:hover {
+            color: #990099;
+            border-bottom-color: #990099;
+        }
+
+    </style>
+
+    <body>
+
+        <div class="w3-top">
+            <div class="w3-bar w3-white w3-card" id="myNavbar">
+                <a href="index.html" class="w3-bar-item w3-button w3-wide"> <img src="img/logo.png"> </a>
+                <!-- Right-sided navbar links -->
+                <div class="w3-right w3-hide-small">
+                    <a href="index.html" class="w3-bar-item w3-button" style="padding-top:20px; padding-bottom: 20px"> <i class="fa fa-home"></i>HOME PAGE</a>
+                    <a href="wiki.html" class="w3-bar-item w3-button" style="padding-top:20px; padding-bottom: 20px; padding-left:20px; padding-right:20px"><i class="fa fa-info"></i> WIKI</a>
+                    <a href="config_consigliate.html" class="w3-bar-item w3-button" style="padding-top:20px; padding-bottom: 20px; padding-left:20px; padding-right:20px"><i class="fa fa-thumbs-up"></i> CONFIGURAZIONI CONSIGLIATE</a>
+                    <a href="config_base.html" class="w3-bar-item w3-button" style="padding-top:20px; padding-bottom: 20px; padding-left:20px; padding-right:20px"><i class="fa fa-desktop"></i> CONFIGURATORE BASE</a>
+                    <a href="config_avanzato.html" class="w3-bar-item w3-button" style="padding-top:20px; padding-bottom: 20px; padding-left:20px; padding-right:20px"><i class="fa fa-microchip"></i> CONFIGURATORE AVANZATO</a>
+                    <a href="periferiche.html" class="w3-bar-item w3-button" style="padding-top:20px; padding-bottom: 20px; padding-left:20px; padding-right:20px"><i class="fa fa-desktop"></i> PERIFERICHE </a>
+                </div>
+                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Sidebar on small screens when clicking the menu icon -->
+        <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+            <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+            <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+            <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+        </nav>
+
+
+
+        <!-- ROBA MIA -->
+
+        <div class = "divWelcome">
+
+            <h1 class = "w3-wide" style = "color: white; text-align: center;"> BENVENUTO AL CONFIGURATORE PER PRINCIPIANTI </h1>
+
+        </div>
+
+        <br>
+
+        <h5 class = "w3-wide" style = "color: white; text-align: center;"> Congratulazioni per aver realizzato la tua build! Ecco ora un resoconto finale:</h5>
+
+
+        <br>
+
+        <div class="myBox">
+
+            <p id="contenutoP" style = "color: #FFFFFF;">
+
+
+
+
+            </p>
+
+
+        </div>
+
+    <center> <p style="color:white; margin-top: 35px" id="prezzoFinale"> Costo totale : </p>
+
+        <br>
+
+        <center> <button id="bottoneScarica" onclick = "WriteToFile()"> <span id ="spanAvanti">Download</span> </button> </center>
+
+        <script>
+            calcola();
+        </script>    
+
+        <!-- Header with full-height image -->
+        <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+
+            <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+                <i class="fa fa-snapchat w3-hover-opacity"></i>
+                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </div>
+        </header> 
+
+
+    </body>
+</html>

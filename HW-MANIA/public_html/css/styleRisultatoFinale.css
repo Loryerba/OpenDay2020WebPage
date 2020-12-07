@@ -1,0 +1,108 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 dic 2020, 17:32:18
+    Author     : Matteo
+*/
+
+
+.divWelcome{
+
+    margin: auto;
+    border: 2px groove white;
+    padding: 1px;
+    box-shadow: 5px 10px 18px gray;
+    width: 1200px;
+    margin-top: 200px;
+
+}
+
+.myBox {
+    margin: auto;
+    margin-top: 50px;
+    border: none;
+    padding: 5px;
+    font: 24px/36px sans-serif;
+    width: 450px;
+    height: 330px;
+    overflow: scroll;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #ffb3ff; 
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #ccc;  
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9900cc;  
+}
+
+#bottoneScarica{
+    border-radius: 4px;
+    background-color: white;
+    border: 2px solid #990099;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 32px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 4px 2px;
+}
+
+#bottoneScarica span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#bottoneScarica span:after {
+    content: '\f019';
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#bottoneScarica:hover span {
+    padding-right: 25px;
+
+
+}
+
+#bottoneScarica:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#bottoneScarica:hover{
+
+    background-color: #990099;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+
+}

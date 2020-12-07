@@ -1,0 +1,192 @@
+
+body{
+
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(img/backimage.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.container{
+
+    width:1200px;
+    height:400px;
+    top: 50px;
+    left: 350px;
+    background:linear-gradient(rgba(202, 198, 198, 0.4), rgba(202,198,198,0.4));
+    position:relative;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0px 7px 5px 5px #00cccc;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+    
+}
+
+.container form{
+
+    width:934px;
+    position: absolute;
+    top:100px;
+    left:120px;
+    transition: 0.5s;
+}
+
+form select{
+
+    width:100%;
+    padding: 10px 5px;
+    margin:5px 0;
+    border:0;
+    border-bottom: 1px solid;
+    outline: none;
+    background: transparent;
+    color: #fff;
+}
+
+form select option{
+    color: #000
+}
+::placeholder{
+    color: #fff;
+}
+
+
+.btn-box{
+
+    width:100%;
+    margin-top:100px;
+    text-align: center;
+}
+
+form button{
+
+width:110px;
+height:35px;
+margin: 0 10 px;
+background: linear-gradient(to right, #990099, #00cccc);
+border-radius: 30px;
+border:0;
+outline:none;
+color: #fff;
+cursor: pointer;
+}
+
+
+#Form2{
+    left:1200px;
+}
+
+#Form3{
+    left:1200px;
+}
+
+#Form4{
+    left:1200px;
+}
+
+#Form5{
+    left:1200px;
+}
+
+#Form6{
+    left:1200px;
+}
+
+#Form7{
+    left:1200px;
+}
+
+#Form8{
+    left:1200px;
+}
+
+#Form9{
+    left:1200px;
+}
+
+#Form10{
+    left:1200px;
+}
+
+.step-row{
+
+width:1200px;
+height:40px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+box-shadow: 0 -1px 5px -1px #000;
+position: relative;
+
+}
+
+.step-col{
+
+    width:120px;
+    text-align: center;
+    color:#fff;
+    position: relative;
+
+}
+#progress{
+    position: absolute;
+    height: 100%;
+    width:120px;
+    background: linear-gradient(to right, #990099, #00cccc);
+    
+    transition:1s;
+}
+progress::after{
+
+    content:'';
+    height:0;
+    width:0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right:-20px;
+    top:0;
+    border-left: 20px solid #ffad06;
+}
+
+
+.benvenuto{
+
+    
+	margin: auto;
+	background:linear-gradient(rgba(202, 198, 198, 0.4), rgba(202,198,198,0.4));
+    border: 2px groove grey;
+    padding: 1px;
+    box-shadow: 0px 7px 5px 5px #990099;
+    width: 1000px;
+    margin-top: 110px;
+
+
+}
+
+.short-description{
+
+	margin: auto;
+	padding-top:15px;
+        width: 1000px;
+
+}
+
+.short-description a{
+	 transition: background-color 0.7s ease-out;
+    -webkit-transition: background-color 0.7s ease-out;
+}
+
+.short-description a:hover{
+	
+	background-color:#990099;
+	
+}
+
+
