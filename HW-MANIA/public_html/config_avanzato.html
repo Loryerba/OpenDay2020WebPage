@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Configuratore Avanzato</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel='stylesheet' type='text/css' media='screen' href='css/styleConfigAvanzato.css'>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="js/jsConfig_Avanzato.js"></script>
+    </head>
+
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Raleway", sans-serif
+        }
+
+        body,
+        html {
+            height: 85%;
+            line-height: 1.8;
+        }
+
+        /* Full height image header */
+        .bgimg-1 {
+            background-position: center;
+            background-size: cover;
+            background-image: url("/w3images/mac.jpg");
+            min-height: 58%;
+        }
+
+        .w3-bar .w3-button {
+            display: block;
+            padding: 0px;
+
+            border-bottom: 2px solid transparent;
+
+            transition: border-bottom-color 0.5s ease-out;
+            -webkit-transition: border-bottom-color 0.5s ease-out;
+        }
+
+
+        .w3-bar .w3-button:hover {
+            color: #990099;
+            border-bottom-color: #990099;
+        }
+    </style>
+
+
+    <body>
+
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-bar w3-white w3-card" id="myNavbar">
+                <a href="index.html" class="w3-bar-item w3-button w3-wide"> <img src="img/logo.png"> </a>
+                <!-- Right-sided navbar links -->
+                <div class="w3-right w3-hide-small">
+
+                    <a href="index.html" class="w3-bar-item w3-button" style="padding-top:20px; padding-bottom: 20px"> <i class="fa fa-home"></i>HOME PAGE</a>
+                    <a href="wiki.html" class="w3-bar-item w3-button" style="padding-top:20px; padding-bottom: 20px; padding-left:20px; padding-right:20px"><i class="fa fa-info"></i> WIKI</a>
+                    <a href="config_consigliate.html" class="w3-bar-item w3-button" style="padding-top:20px; padding-bottom: 20px; padding-left:20px; padding-right:20px"><i class="fa fa-thumbs-up"></i> CONFIGURAZIONI CONSIGLIATE</a>
+                    <a href="config_base.html" class="w3-bar-item w3-button" style="padding-top:20px; padding-bottom: 20px; padding-left:20px; padding-right:20px"><i class="fa fa-desktop"></i> CONFIGURATORE BASE</a>
+                    <a href="config_avanzato.html" class="w3-bar-item w3-button" style="padding-top:20px; padding-bottom: 20px; padding-left:20px; padding-right:20px"><i class="fa fa-microchip"></i> CONFIGURATORE AVANZATO</a>
+                    <a href="periferiche.html" class="w3-bar-item w3-button" style="padding-top:20px; padding-bottom: 20px; padding-left:20px; padding-right:20px"><i class="fa fa-desktop"></i> PERIFERICHE </a>
+                </div>
+                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Sidebar on small screens when clicking the menu icon -->
+        <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+             style="display:none" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+                ×</a>
+            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+            <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+            <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+            <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+        </nav>
+
+
+        <!-- Sezione centrale della pagina, contenente il titolo di benvenuto, una breve descrizione e infine la form d'esecuzione-->
+        <div class="page">		
+
+            <!--Sezione di benvenuto-->
+            <div class="benvenuto">
+                <!-- Titolo di benvenuto-->
+                <h1 class = "w3-wide" style = "text-align: center; color: #fff"> CONFIGURATORE AVANZATO </h1>
+
+            </div>
+            <!-- Sezione di breve descrizione-->
+            <div class="short-description">
+                <!-- Breve descrizione-->
+                <p style="text-align:center; color:#fff" > Benvenuto nel configuratore avanzato. Se ti trovi qui, sicuramente sei informato sul mondo dell'hardware e del <b> Pc Master Race </b> . Nel caso
+                    tu voglia conoscerne di piu' su questo mondo e imparare a realizzare una configurazione passo-passo, ti lascio il riferimento della nostra <a href="wiki.html" class="overlink" >
+                        WIKI </a>,e del nostro <a href="config_base.html" class="overlink"> CONFIGURATORE BASE </a>, che puoi trovare anche nella barra di navigazione in alto.
+                    <i> <b> Buon lavoro! </b> </i>
+
+            </div>
+          
+            
+                
+                <!--Sezione centrale contenente la form per la realizzazione della configurazione-->
+            <div class="container">
+                
+              
+                <!-- Form per la scelta del processore-->
+                <form id="Form1">
+                    
+                    <h3> Processore</h3>
+                    <div class="select">
+                        <!-- Combo box per il processore -->
+                        <select name="slct" id="slct-cpu">
+                            <option selected disabled>Selezionare un processore</option>
+                            <option value="1" hidden>Amd Ryzen 3 3200G : 144€</option>
+                            <option value="2">Amd Ryzen 5 2600X : 153€</option>
+                            <option value="3">Amd Ryzen 5 3400G : 214€</option>
+                            <option value="4">Amd Ryzen 5 3600 : 284€</option>
+                            <option value="5">Amd Ryzen 5 3600X : 266€</option>
+                            <option value="6">Amd Ryzen 7 2700X : 228€</option>
+                            <option value="7">Amd Ryzen 7 3700X : 319€</option>
+                            <option value="8">Amd Ryzen 7 3800X : 345€</option>
+                            <option value="10">Amd Ryzen 9 3900XT: 502€</option>
+                            <option value="11">Amd Ryzen 9 3950X: 458€</option>
+
+
+                            <option value="12">Intel i3 9100 : 133€</option>
+                            <option value="13">Intel i3 9100F : 105€</option>
+                            <option value="14">Intel i5 8400 : 198€ </option>
+                            <option value="15">Intel i5 8600K : 241€</option>
+                            <option value="16">Intel i5 9400F : 167€ </option>
+                            <option value="16">Intel i5 9600 : 289€</option>
+                            <option value="17">Intel i5 9600F : 184€</option>
+                            <option value="18">Intel i7 8700 : 332€</option>
+                            <option value="19">Intel i7 9700 : 300€</option>
+                            <option value="20">Intel i7 9700K : 308€</option>
+                            <option value="21">Intel i7 10700 : 370€</option>
+                            <option value="22">Intel i7 10700K : 380€</option>
+                            <option value="23">Intel i9 10900K : 553€</option>
+                        </select>
+
+                    </div>
+
+                    <!-- Bottone per proseguire alla pagina successiva della form-->
+                    <div class="btn-box">
+                        <button type="button" id="Next1" onclick="evaluateFirst();"> Avanti </button>
+                    </div>
+
+                </form>
+                <!-- Form per la scelta della scheda madre-->
+                <form id="Form2">
+
+                    <h3> Scheda Madre</h3>
+                    <!-- Combo box per la scheda madre -->
+                    <select name="slct" id="slct-mobo">
+                        <option selected disabled>Selezionare una scheda madre</option>
+                        <!-- SCHEDE MADRI PER PROCESSORI RYZEN (TUTTE COMPATIBILI DALLA SERIE 3 ALLA SERIE 9-->
+                        <option value="1">Gigabyte B450M DS3H : 72€</option>
+                        <option value="2">Asus ROG STRIX B450-F GAMING : 162€</option>
+                        <option value="3">MSI B450 GAMING PLUS MAX : 86€</option>
+                        <option value="4"> ASUS TUF Gaming X570-Plus (WI-FI) : 240€ </option>
+                        <option value="5"> ASRock B550 PHANTOM GAMING-ITX : 144€ </option>
+                        <option value="6"> MSI B550-A PRO : 135€</option>
+                        <option value="7"> ASUS PRIME B550-PLUS : 141€</option>
+                        <option value="8"> ASUS Prime X570-PRO : 253€</option>
+                        <option value="9">ASUS ROG Strix X570-F : 283€</option>
+                        <option value="10"> GIGABYTE B550 AORUS : 162€</option>
+
+                        <!-- SCHEDE MADRI PER PROCESSORI INTEL -->
+                        <option value="1">ASUS ROG STRIX Z390-F : 273€</option>
+                        <option value="2">ASUS TUF Z390-PLUS : 214€</option>
+                        <option value="3">MSI B365M PRO-VH M.Atx : 60€</option>
+                        <option value="4"> MSI MPG Z390 GAMING PLUS </option>
+                        <option value="5"> Gigabyte Z390 UD : 118€</option>
+                        <option value="6"> Asus Z390 ROG MAXIMUS XI HERO : 231€</option>
+                        <!-- Da i7 decima generazione a i9 oltre alle precedenti, si aggiungono le seguenti-->
+                        <option value="7"> ASUS ROG STRIX B460-H GAMING : 142€</option>
+                        <option value="8"> ASUS TUF GAMING B460-PRO (WI-FI) : 166€</option>
+                        <option value="9">ASUS ROG STRIX Z490-H : 247€</option>
+                        <option value="10">ASUS ROG MAXIMUS XII FORMULA : 638€</option>
+
+
+                    </select>
+
+                    <div class="btn-box">
+                        <!-- Bottone per proseguire alla pagina successiva della form-->
+                        <button type="button" id="Back1" onclick="BackFirst();"> Indietro </button>
+                        <!-- Bottone per proseguire alla pagina precedente della form-->
+                        <button type="button" id="Next2" onclick="evaluateSecond();"> Avanti </button>
+                    </div>
+
+                </form>
+                <!-- Form per la scelta del dissipatore -->
+                <form id="Form3">
+
+                    <h3> Dissipatore </h3>
+                    <!-- Combo box per il dissipatore -->
+                    <select name="slct" id="slct-cooler">
+                        <option selected disabled>Selezionare un dissipatore </option>
+                        <option value="1"> Cooler Master Hyper 212 EVO Dissipatore Aria : 33€</option>
+                        <option value="2"> Noctua NH-U9B SE2 Dissipatore Aria : 100€</option>
+                        <option value="3"> ARCTIC Freezer 34 eSports DUO Dissipatore Aria : 44€</option>
+                        <option value="4"> Noctua NH-D15 chromax.Black Dissipatore Aria : 99€</option>
+                        <option value="5"> NZXT Kraken X63 280mm Dissipatore Liquido : 136€</option>
+                        <option value="6"> NZXT Kraken X53 240mm Dissipatore Liquido : 118€</option>
+                        <option value="7"> Corsair Hydro H100X 240 mm Dissipatore Liquido : 89€</option>
+                        <option value="8"> DEEP COOL GAMMAXX L240T Raffreddatore di Liquido : 59€</option>
+                        <option value="9"> Cooler Master MasterLiquid ML240L V2 RGB Dissipatore liquido: 84€</option>
+                        <option value="10">Cooler Master MasterLiquid ML360R RGB Dissipatore liquido : 142€</option>
+
+                    </select>
+
+                    <div class="btn-box">
+                        <!-- Bottone per proseguire alla pagina successiva della form-->
+                        <button type="button" id="Back2" onclick="BackSecond();"> Indietro </button>
+                        <!-- Bottone per proseguire alla pagina precedente della form-->
+                        <button type="button" id="Next3" onclick ="evaluateThird();"> Avanti </button>
+                    </div>
+
+                </form>
+                <!-- Form per la scelta delle ram -->
+                <form id="Form4">
+
+                    <h3> Ram </h3>
+                    <!-- Combo box per le ram -->
+                    <select name="slct" id="slct-ram">
+                        <option selected disabled>Selezionare la memoria ram: </option>
+                        <option value="1">HyperX Fury 4GB 2400Mhz : 33€</option>
+                        <option value="2">HyperX Fury 4 GB 3200 MHz : 33€</option>
+                        <option value="3">HyperX Fury Kit 2x4 GB (8GB) 2666 MHz : 61€ </option>
+                        <option value="4">Corsair Vengeance LPX8 GB (1 X 8 GB) 3000 MHz : 41€</option>
+                        <option value="5">Crucial Ballistix 16GB (8GB x2) 2400 MHz : 83€</option>
+                        <option value="6">Crucial Ballistix RGB 16GB (8GBx2) 3000 MHz : 119€</option>
+                        <option value="7">Corsair Vengeance LPX 16GB (2 X 8 GB) 3200 MHz : 72€ </option>
+                        <option value="8">Corsair Vengeance LPX 16GB (2x 8GB) DDR4 3600 Mhz : 69€ </option>
+                        <option value="9">Corsair Vengeance RGB PRO Black 2x8GB 3600 MHz : 104€</option>
+                        <option value="10"> Corsair Vengeance LPX 2x16GB 3600 MHz : 144€</option>
+                        <option value="11"> Corsair Vengeance RGB PRO Black 4x8GB 3600 MHz : 186€</option>
+                        <option value="12"> Corsair Vengeance LPX 32GB (4 X 8 GB) 3200 MHz :170€ </option>
+                        <option value="13"> HyperX Predator Kit da 4x16GB 64 GB 3200MHz : 412€</option>
+                        <option value="14"> HyperX Predator Kit da 2x32GB 64GB 3200MHz : 362€</option>
+                        <option value="15"> Corsair Vengeance RGB PRO Black 4x16GB 3200MHz : 355€</option>
+                        <option value="16"> Corsair VENGEANCE RGB PRO 128 GB (4 x 32 GB) DDR4 3600Mhz : 622€</option>
+                    </select>
+
+                    <div class="btn-box">
+                        <!-- Bottone per proseguire alla pagina successiva della form-->
+                        <button type="button" id="Back3" onclick="BackThird();"> Indietro </button>
+                        <!-- Bottone per proseguire alla pagina precedente della form-->
+                        <button type="button" id="Next4" onclick="evaluateFourth();"> Avanti </button>
+                    </div>
+
+                </form>
+                <!-- Form per la scelta delle schede video -->
+                <form id="Form5">
+
+                    <h3> Scheda Video </h3>
+                    <!-- Combo box per la scheda video -->
+                    <select name="slct" id="slct-gpu">
+                        <option selected disabled>Selezionare una scheda video: </option>
+                        <option value="1">Asus Cerberus GeForce GTX 1050 4GB : 151€ </option>
+                        <option value="2">Msi GeForce GTX 1050Ti Gaming X 4GB : 172€</option>
+                        <option value="3">KFA2 GeForce GTX 1060 6GB : 390€</option>
+                        <option value="4">MSI GeForce GTX 1060 GAMING X 6G : 440€</option>
+                        <option value="5">Zotac GeForce GTX 1060 3GB : 292€</option>
+                        <option value="6">Nvidia Titan RTX TITAN X 24GB : 700€</option>
+                        <option value="7">GIGABYTE GeForce GTX 1650 OC 4G : 160€</option>
+                        <option value="8">MSI GeForce GTX 1660 VENTUS XS 6G OC : 285€</option>
+                        <option value="9">Gigabyte GeForce GTX 1660 SUPER OC 6G 6GB : 324€</option>
+                        <option value="10">EVGA GeForce GTX 1660 Ti 6GB : 300€ </option>
+                        <option value="11">ASUS ROG Strix GeForce RTX 2060 OC EVO 6GB : 450€</option>
+                        <option value="12"> ASUS GeForce RTX 2060 Super ROG Strix Evo Gaming 8GB : 580€ </option>
+                        <option value="13">MSI GeForce RTX 2070 VENTUS GP 8GB : 519€ </option>
+                        <option value="14">MSI NVIDIA GEFORCE RTX 2070 SUPER GAMING X TRIO '8GB : 500€</option>
+                        <option value="15">MSI GEFORCE RTX 2080 SUPER GAMING X TRIO 8GB : 825€</option>
+                        <option value="16">ASUS Asus ROG Strix GeForce RTX 2080 Ti OC Edition 11 GB : 1600€</option>
+                        <option value="13">XFX - Scheda Grafica AMD Radeon RX 570 8 GB : 200€</option>
+                        <option value="14"> SAPPHIRE Technology Pulse RADEON RX 5500 XT 8G : 236€</option>
+                        <option value="15">XFX - Scheda grafica, RX 5600 Xt Thicc II Ultra 6GB : 369€</option>
+                        <option value="16"> XFX Radeon RX 5700 XT DD 8GB : 440€ </option>
+                    </select>
+
+                    <div class="btn-box">
+                        <!-- Bottone per proseguire alla pagina successiva della form-->
+                        <button type="button" id="Back4" onclick="BackFourth();"> Indietro </button>
+                        <!-- Bottone per proseguire alla pagina precedente della form-->
+                        <button type="button" id="Next5" onclick="evaluateFifth();"> Avanti </button>
+                    </div>
+
+                </form>
+                <!-- Form per la scelta dell'hard disk -->
+                <form id="Form6">
+
+                    <h3> Hard Disk</h3>
+                    <!-- Combo box per l'hard disk -->
+                    <select name="slct" id="slct-hdd">
+                        <option selected disabled>Selezionare un Hard Disk: </option>
+                        <option value="1">Seagate BarraCuda Pro 500 GB : 41€</option>
+                        <option value="2">Seagate BarraCuda Pro 1 TB: 72€</option>
+                        <option value="3">Seagate BarraCuda 2 TB : 58€ </option>
+                        <option value="4">Seagate BarraCuda 3 TB : 79€</option>
+                        <option value="5">Seagate BarraCuda 4 TB : 89€</option>
+                        <option value="6">Seagate BarraCuda 5 TB : 162€</option>
+                        <option value="7">Seagate BarraCuda 6 TB : 129€</option>
+                    </select>
+
+                    <div class="btn-box">
+                        <!-- Bottone per proseguire alla pagina successiva della form-->
+                        <button type="button" id="Back5" onclick = "BackFifth();"> Indietro </button>
+                        <!-- Bottone per proseguire alla pagina precedente della form-->
+                        <button type="button" id="Next6" onclick="evaluateSixth();"> Avanti </button>
+                    </div>
+
+                </form>
+                <!-- Form per la scelta dell'ssd -->
+                <form id="Form7">
+
+                    <h3> Solid State Drive (SSD) </h3>
+                    <!-- Combo box per l' ssd -->
+                    <select name="slct" id="slct-ssd">
+                        <option selected disabled>Selezionare un SSD: </option>
+                        <option value="1"> Samsung SSD Sata 860 EVO 250 GB : 39€</option>
+                        <option value="2"> Samsung SSD Sata 860 EVO 500 GB : 64€ </option>
+                        <option value="3"> Samsung SSD Sata 860 EVO 1TB : 107€</option>
+                        <option value="4"> Samsung SSD Sata 860 EVO 2TB : 267€</option>
+                        <option value="5"> Western Digital WD Black SN750 NVMe M.2 250GB : 58€ </option>
+                        <option value="6"> Western Digital WD Black SN750 NVMe M.2 500GB : 176€ </option>
+                        <option value="7"> Western Digital WD Black SN750 NVMe M.2 1TB : 169€ </option>
+                        <option value="8"> Western Digital WD Black SN750 NVMe M.2 2TB : 588€</option>
+                    </select>
+
+                    <div class="btn-box">
+                        <!-- Bottone per proseguire alla pagina successiva della form-->
+                        <button type="button" id="Back6" onclick="BackSixth();"> Indietro </button>
+                        <!-- Bottone per proseguire alla pagina precedente della form-->
+                        <button type="button" id="Next7" onclick="evaluateSeventh();"> Avanti </button>
+                    </div>
+
+                </form>
+
+                <!-- Form per la scelta dell'alimentatore -->
+                <form id="Form8">
+
+                    <h3> Alimentatore </h3>
+                    <!-- Combo box per l'alimentatore -->
+                    <select name="slct" id="slct-psu">
+                        <option selected disabled>Selezionare un alimentatore:</option>
+                        <option value="1">EVGA 450W BR, 80 Plus Bronze Non modulare : 45€</option>
+                        <option value="2">Corsair CV450W 80 Plus Bronze Non modulare : 74€</option>
+                        <option value="3">THERMALTAKE SMART SE 530W MODULARE : 64€</option>
+                        <option value="4">Corsair VS550W 80 Plus Nero Non Modulare : 55€</option>
+                        <option value="5">THERMALTAKE SMART SE 530W MODULARE : 64€</option>
+                        <option value="6">Thermaltake Smart SE 630W MODULARE : 78€</option>
+                        <option value="7">Corsair VS650W 80 PLUS Nero Non Modulare : 116€</option>
+                        <option value="8">NZXT C750W 80 Plus Gold Modulare : 165€</option>
+                        <option value="9">Asus ROG STRIX 750W 80 Plus Modulare : 161e</option>
+                        <option value="10">Asus ROG-THOR-850W Modulare : 264€</option>
+                        <option value="11">Asus ROG-THOR-1200W Modulare : 349€</option>
+                    </select>
+
+                    <div class="btn-box">
+                        <!-- Bottone per proseguire alla pagina precedente della form-->
+                        <button type="button" id="Back7" onclick="BackSeventh();"> Indietro </button>
+                        <!-- Bottone per proseguire alla pagina successiva della form-->
+                        <button type="button" id="Next8" onclick="evaluateEighth();"> Avanti </button>
+                    </div>
+
+                </form>
+                <!-- Form per la scelta del case -->
+                <form id="Form9">
+
+                    <h3> Case </h3>
+                    <!-- Combo box per il case -->
+                    <select name="slct" id="slct-case">
+                        <option selected disabled>Selezionare un case:</option>
+                        <option value="1"> Corsair Carbide Series SPEC-DELTA : 100€</option>
+                        <option value="2"> NZXT H510 Black : 101€</option>
+                        <option value="3"> Corsair 110Q Black : 29€</option>
+                        <option value="4"> Noua Utopia F1 Black : 80€</option>
+                        <option value="5"> Corsair iCUE 220T RGB : 115€</option>
+                        <option value="6"> DEEP COOL MATREXX 70 3F : 94€</option>
+                        <option value="7"> Lian Li PC-O11 Bianco : 118€</option>
+                        <option value="8"> Cooler Master MasterBox : 89€ </option>
+                        <option value="9"> ASUS ROG Strix Helios RGB Bianco : 300€</option>
+                        <option value="10">Asus ROG Strix Helios Nero : 266€</option>
+                    </select>
+                    <div class="btn-box">
+                        <!-- Bottone per proseguire alla pagina precedente della form-->
+                        <button type="button" id="Back8" onclick="BackEighth();"> Indietro </button>
+                        <!-- Bottone per proseguire alla pagina successiva della form-->
+                        <button type="button" id="Next9" onclick="evaluateNinth();"> Avanti </button>
+                    </div>
+
+
+                </form>
+                <!-- Form per la scelta delle ventole -->
+                <form id="Form10">
+
+                    <h3> Ventole Case </h3>
+                    <!-- Combo box per le ventole del case -->
+                    <select name="slct" id="slct-fan">
+                        <option selected disabled>Selezionare una ventola:</option>
+                        <option value="1">Corsair ML120 Ventola a Levitazione Magnetica : 23€</option>
+                        <option value="2">Corsair LL120 RGB Ventola da 120 mm : 29€</option>
+                        <option value="3">Noctua NF-P14s redux-1500 PWM : 15€</option>
+                        <option value="4">Corsair iCUE SP120 RGB PRO : 16€</option>
+
+                    </select>
+
+                    <div class="btn-box">
+                        <!-- Bottone per proseguire alla pagina precedente della form-->
+                        <button type="button" id="Back9" onclick="BackNinth();"> Indietro </button>
+                        <!-- Bottone per confermare le scelte della configurazione-->
+                        <button type="button" id="Submit" onclick="evaluateBuild();"> Fine </button>
+                    </div>
+
+
+                </form>
+
+                <!--Sezione nella parte alta delle form, contenente la progress bar-->
+                <dvi class="step-row">
+                    <div id="progress"></div>
+                    <div class="step-col"><small> Processore</small></div>
+                    <div class="step-col"><small> Scheda Madre</small></div>
+                    <div class="step-col"><small> Dissipatore</small></div>
+                    <div class="step-col"><small> Ram </small></div>
+                    <div class="step-col"><small> Scheda Video</small></div>
+                    <div class="step-col"><small> Hard Disk</small></div>
+                    <div class="step-col"><small> SSD</small></div>
+                    <div class="step-col"><small> Alimentatore</small></div>
+                    <div class="step-col"><small> Case </small></div>
+                    <div class="step-col"><small> Ventole Case</small></div>
+
+                </dvi>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
+

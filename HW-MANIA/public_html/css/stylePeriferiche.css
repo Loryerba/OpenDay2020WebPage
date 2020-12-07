@@ -1,0 +1,353 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 4 nov 2020, 15:48:46
+    Author     : Matteo
+*/
+
+/* DIV PER SCRITTA BENVENUTO */
+
+.divBenvenuto{
+
+    margin: auto;
+    border: 2px groove black;
+    padding: 1px;
+    box-shadow: 5px 10px 18px gray;
+    width: 1200px;
+    margin-top: 200px;
+
+}
+
+.divContenitore2{
+
+    margin-top: 690px;
+
+}
+
+.divContenitore3{
+
+    margin-top: 760px;
+
+}
+
+.divContenitore4{
+
+    margin-top: 780px;
+
+}
+
+/* PER ESTETICA LINEA */
+
+.linea {
+
+    border:none;
+    height: 20px;
+    width: 90%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #990099;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px;
+    animation: gradientRiga 25s ease infinite;
+
+}
+
+/* DIV CONTENITORE */
+
+.row{
+    width: 100%;
+    margin: 0 0 0 20px;
+    padding: 0;
+
+}
+
+.divSinistra{
+
+    margin-top :6%;
+    margin-left :10%;
+    float: left;
+    padding: 10px;
+    border: 3px groove #990099;
+    width: 250px;
+    height: 250px;
+    box-shadow: 5px 10px 18px #990099;
+    animation: gradientBordi 25s ease infinite
+
+}
+
+.divSinistraContent{
+
+    margin-top :2%;
+    margin-left :10%;
+    float: left;
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+
+}
+
+.divCentroContent{
+
+    margin-top :2%;
+    margin-left :20.3%;
+    float: left;
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+
+
+}
+
+.divDestraContent{
+
+    margin-top :2%;
+    margin-right :12%;
+    float: right;
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+
+}
+
+.divCentro{
+
+    margin-top :6%;
+    margin-left :20.3%;
+    float: left;
+    padding: 10px;
+    border: 3px groove #990099;
+    width: 250px;
+    height: 250px;
+    box-shadow: 5px 10px 18px #990099;
+    animation: gradientBordi 25s ease infinite
+
+}
+
+.divDestra{
+
+    margin-top :6%;
+    margin-right :12%;
+    float: right;
+    padding: 10px;
+    border: 3px groove #990099;
+    width: 250px;
+    height: 250px;
+    box-shadow: 5px 10px 18px #990099;
+    animation: gradientBordi 25s ease infinite;
+
+}
+
+/* ANIMAZIONE BORDI DIV*/
+
+@keyframes gradientBordi {
+    0% {
+        border: 3px groove #990099;
+        box-shadow: 5px 10px 18px #990099;
+    }
+    50% {
+
+        border: 3px groove blue;
+        box-shadow: 5px 10px 18px blue;
+
+    }
+    100% {
+        border: 3px groove #990099;
+        box-shadow: 5px 10px 18px #990099;
+    }
+}
+
+@keyframes gradientRiga {
+    0% {
+        border-bottom: 1px solid #990099;
+    }
+    50% {
+
+        border-bottom: 1px solid blue;
+
+    }
+    100% {
+        border-bottom: 1px solid #990099;
+    }
+}
+
+/* BOTTONI */
+
+.bottone {
+    border-radius: 4px;
+    background-color: #ffccff;
+    border: 2px solid #990099;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 32px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 4px 2px;
+    text-align:center;
+}
+
+.bottone span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.bottone span:after {
+    content: '\f07a';
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.bottone:hover span {
+    padding-right: 25px;
+
+
+}
+
+.bottone:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.bottone:hover{
+
+    background-color: #990099;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+
+}
+
+/* SFOCATURA IMMAGINE */
+
+shadow
+{
+    display:block;
+    position:relative;
+}
+
+
+.shadow:before
+{
+    display:block;
+    content:'';
+    position:absolute;
+    width:223px;
+    height:223px;
+    -moz-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+    -webkit-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+    box-shadow:inset 0px 0px 6px 6px rgba(84, 89, 89, 1);
+}
+
+/* TASTIERA RAZER */
+.shadow2:before
+{
+    display:block;
+    content:'';
+    position:absolute;
+    width:223px;
+    height:131px;
+    -moz-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+    -webkit-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+    box-shadow:inset 0px 0px 6px 6px rgba(84, 89, 89, 1);
+    margin-top :2.35%;
+}
+
+/* PER TASTIERA CM */
+.shadow1:before
+{
+    display:block;
+    content:'';
+    position:absolute;
+    width:224px;
+    height:95px;
+    -moz-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+    -webkit-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+    box-shadow:inset 0px 0px 6px 6px rgba(84, 89, 89, 1);
+    margin-top :3.4%;
+}
+
+/* PER MOUSE LOGITECH */
+.shadow3:before
+{
+    display:block;
+    content:'';
+    position:absolute;
+    width:224px;
+    height:128px;
+    -moz-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+    -webkit-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+    box-shadow:inset 0px 0px 6px 6px rgba(84, 89, 89, 1);
+    margin-top :2.35%;
+}
+
+/* PER MOUSE RAZER VIPER */
+.shadow4:before
+{
+    display:block;
+    content:'';
+    position:absolute;
+    width:224px;
+    height:128px;
+    -moz-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+    -webkit-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+    box-shadow:inset 0px 0px 6px 6px rgba(84, 89, 89, 1);
+    margin-top :2.5%;
+}
+
+
+/* MONITOR FULL HD e 2K */
+.shadow5:before
+{
+    display:block;
+    content:'';
+    position:absolute;
+    width:224px;
+    height:173px;
+    -moz-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+    -webkit-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+    box-shadow:inset 0px 0px 6px 6px rgba(84, 89, 89, 1);
+    margin-top :1.4%;
+}
+
+/* MONITOR 4K */
+.shadow6:before
+{
+    display:block;
+    content:'';
+    position:absolute;
+    width:224px;
+    height:196px;
+    -moz-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+    -webkit-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+    box-shadow:inset 0px 0px 6px 6px rgba(84, 89, 89, 1);
+    margin-top :0.75%;
+}
+
+/* METEOR MIC */
+.shadow7:before
+{
+    display:block;
+    content:'';
+    position:absolute;
+    width:148px;
+    height:224px;
+    -moz-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+    -webkit-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+    box-shadow:inset 0px 0px 6px 6px rgba(84, 89, 89, 1);
+    margin-top :auto;
+    margin-left :2%;
+}

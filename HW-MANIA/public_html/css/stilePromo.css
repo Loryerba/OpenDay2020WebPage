@@ -1,0 +1,114 @@
+.container{
+
+    width: 100%;     
+    margin: 10px;     
+    padding: 0;
+   
+}
+
+.short-description{
+
+    margin: auto;
+    padding-top:15px;
+    width: 1000px;
+
+}
+
+	
+
+.benvenuto{
+	margin: auto;
+    border: 2px groove #990099;
+    padding: 1px;
+    box-shadow: 5px 10px 18px cyan;
+    width: 1200px;
+    margin-top: 100px;
+	
+}
+
+
+
+
+/* -----------div per la visualizzazione dei riquadri per le promo-------------*/
+.firstPromo{
+
+   
+  margin-top :30px;    
+  margin-left :0.3%;     
+  float: left;     
+  padding: 10px;     
+  border: 3px groove #00cfff;     
+  width: 300px;     
+  height: 300px;     
+  box-shadow: 5px 10px 18px #00cfff;
+
+
+}
+
+.fifthPromo{
+
+    
+  margin-top :30px;    
+  margin-right :2%;     
+  float:right;     
+  padding: 10px;     
+  border: 3px groove #00cfff;     
+  width: 300px;     
+  height: 300px;     
+  box-shadow: 5px 10px 18px #00cfff;
+
+
+}
+
+.secondPromo{
+
+   
+  margin-top :30px;    
+  margin-left :5%;     
+  float: left;     
+  padding: 10px;     
+  border: 3px groove #990099;     
+  width: 300px;     
+  height: 300px;     
+  box-shadow: 5px 10px 18px #990099;
+
+
+}
+
+
+.thirdPromo{
+
+   
+  margin-top : 30px;    
+  margin-left :5%;     
+  float: left;     
+  padding: 10px;     
+  border: 3px groove #00cfff;     
+  width: 300px;     
+  height: 300px;     
+  box-shadow: 5px 10px 18px #00cfff;
+
+}
+
+
+.fourthPromo{
+
+  /*
+  Se ci sono promo margin-top: -350px;
+  Se ci sono promo margin-top:3
+  */
+  margin-top :30px;    
+  margin-left :5%;     
+  float: left;     
+  padding: 10px;     
+  border: 3px groove #990099;     
+  width: 300px;     
+  height: 300px;     
+  box-shadow: 5px 10px 18px #990099;
+
+}
+
+.divContenitore{
+    
+    margin:auto;
+}
