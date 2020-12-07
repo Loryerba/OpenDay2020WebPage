@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Alimentatore</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="shortcut icon"  type="image/x-icon" href="favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+        body, html {
+            height: 30%;
+            line-height: 1.3;
+            background: linear-gradient(to top left, powderblue, pink);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center ;
+        }
+
+        /* Full height image header */
+        .bgimg-1 {
+            background-position: center;
+            background-size: cover;
+            background-image: url("/w3images/mac.jpg");
+            min-height: 100%;
+        }
+
+        .w3-bar .w3-button {
+            display: block;
+            padding: 0px;
+
+            border-bottom: 2px solid transparent;
+
+            transition: border-bottom-color 0.5s ease-out;
+            -webkit-transition: border-bottom-color 0.5s ease-out;
+        }
+
+
+        .w3-bar .w3-button:hover {
+            color: #990099;
+            border-bottom-color: #990099;    
+        }
+
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #f1f1f1}
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+    </style>
+    <body>
+
+
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-bar w3-white w3-card" id="myNavbar">
+                <a href="#home" class="w3-bar-item w3-button w3-wide"> <img src="img/logo.png"> </a>
+                <!-- Right-sided navbar links -->
+                <div class="w3-right w3-hide-small">
+                   <a href="index.html" class="w3-bar-item w3-button" style="padding-top:20px; padding-bottom: 20px"> <i class="fa fa-home"></i>HOME PAGE</a>
+                    <a href="wiki.html" class="w3-bar-item w3-button" style="padding-top:20px; padding-bottom: 20px; padding-left:20px; padding-right:20px"><i class="fa fa-info"></i> WIKI</a>
+                    <a href="config_consigliate.html" class="w3-bar-item w3-button" style="padding-top:20px; padding-bottom: 20px; padding-left:20px; padding-right:20px"><i class="fa fa-thumbs-up"></i> CONFIGURAZIONI CONSIGLIATE</a>
+                    <a href="config_base.html" class="w3-bar-item w3-button" style="padding-top:20px; padding-bottom: 20px; padding-left:20px; padding-right:20px"><i class="fa fa-desktop"></i> CONFIGURATORE BASE</a>
+                    <a href="config_avanzato.html" class="w3-bar-item w3-button" style="padding-top:20px; padding-bottom: 20px; padding-left:20px; padding-right:20px"><i class="fa fa-microchip"></i> CONFIGURATORE AVANZATO</a>
+                    <a href="periferiche.html" class="w3-bar-item w3-button" style="padding-top:20px; padding-bottom: 20px; padding-left:20px; padding-right:20px"><i class="fa fa-desktop"></i> PERIFERICHE </a>
+                </div>
+
+
+
+                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Sidebar on small screens when clicking the menu icon -->
+        <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+            <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+            <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+            <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+        </nav>
+
+
+       <!-- Riquadro di benvenuto contenente il titolo della componente che si sta trattando -->
+        <div class="divBenvenuto">
+
+            <h1 class = "w3-wide" style = "text-align: center;">Alimentatore</h1>
+        </div>
+
+
+        <!-- div contenente la descrizione della componente -->
+        <div class="divDescrizione">
+            <div class="w3-container w3-content  w3-center w3-padding-64" style="max-width:800px" id="menu">
+                <p class="w3-justify">Un alimentatore elettrico, comunemente chiamato alimentatore, è un convertitore corrente alternata-corrente continua,in modo da fornire energia elettrica adattandola all'uso di altre apparecchiature elettriche,modificando eventualmente anche i livelli di tensione e intensità di corrente.Un crescente numero di case costruttrici adotta la certificazione 80 Plus per verificare la stabilità della tensione in uscita e la quantità di energia dissipata in calore sotto varie condizioni di carico dell'alimentatore.</p>  
+            </div>
+        </div>
+
+
+        <!-- slideshow delle immagini -->
+        <div class="slider">
+            <div class="slider-items">
+                <div  class="item active">
+                    <img src="img/al1.png" />
+                </div>
+                <div  class="item">
+                    <img src="img/al2.png" />
+                </div>
+                <div  class="item">
+                    <img src="img/al3.png" />
+                </div>
+
+            </div>
+            <!-- slider controls -->
+            <div class="left-slide"><</div>
+            <div class="right-slide">></div>
+            <!-- slider controls -->
+        </div>
+
+        <!-- simboli di snapchat,instagram,faceboook,pinterest,twitter,linkedin -->
+        <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+
+            <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+                <i class="fa fa-snapchat w3-hover-opacity"></i>
+                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </div>
+        </header>
+
+
+        <!-- script utilizzato per lo slideshow delle immagini-->
+        <script >
+
+            var slides = document.querySelector('.slider-items').children;
+            var nextSlide = document.querySelector(".right-slide");
+            var prevSlide = document.querySelector(".left-slide");
+            var totalSlides = slides.length;
+            var index = 0;
+
+            nextSlide.onclick = function () {
+                next("next");
+            }
+            prevSlide.onclick = function () {
+                next("prev");
+            }
+
+            function next(direction) {
+
+                if (direction == "next") {
+                    index++;
+                    if (index == totalSlides) {
+                        index = 0;
+                    }
+                } else {
+                    if (index == 0) {
+                        index = totalSlides - 1;
+                    } else {
+                        index--;
+                    }
+                }
+
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].classList.remove("active");
+                }
+                slides[index].classList.add("active");
+
+            }
+        </script>
+    </body><!-- comment -->
+</html>
+
+
+
