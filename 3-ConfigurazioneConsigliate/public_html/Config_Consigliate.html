@@ -32,7 +32,7 @@ and open the template in the editor.
         .bgimg-1 {
             background-position: center;
             background-size: cover;
-            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("/w3images/mac.jpg");
+            background-image: url("/w3images/mac.jpg");
             min-height: 100%;
         }
 
@@ -97,6 +97,10 @@ and open the template in the editor.
         .dropdown:hover .dropbtn {
             background-color: #3e8e41;
         }
+		    .opaque {
+        background: rgba(41, 41, 41, 0.8);
+        padding: 20px;
+    }
 
     </style>
     <body>
@@ -148,7 +152,7 @@ and open the template in the editor.
 <div class="w3-container w3-content  w3-center w3-padding-64" style="max-width:800px" id="menu">
     <h2 class="w3-wide"style = "color: white">Configurazione Consigliate</h2>
     <a class="w3-justify" text-align: center style = "color: white" >Benvenuto!</a>
-    <p class="w3-justify"style = "color: white">In questa pagina potrai visualizzare e confrontare le migliori configurazioni disponibili in base al tuo budget.
+    <p class="w3-justify opaque"style = "color: white">In questa pagina potrai visualizzare e confrontare le migliori configurazioni disponibili in base al tuo budget.
         Tramite i menù a tendina qui sotto potrai scegliere il tuo budget e l'utilizzo della tua build.
         Una volta premuto il bottone ti compariranno due configurazioni,una che utilizza processori Intel e una che utilizza processori AMD,che corrispondono alle migliori build che abbiamo scelto per te nella fascia di prezzo scelta.</p> 
 
