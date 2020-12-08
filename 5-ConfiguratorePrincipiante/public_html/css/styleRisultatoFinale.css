@@ -29,6 +29,7 @@ and open the template in the editor.
     width: 450px;
     height: 330px;
     overflow: scroll;
+    background: rgba(120, 120, 120, 0.5); 
 }
 
 /* Scrollbar styles */
